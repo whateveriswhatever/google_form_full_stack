@@ -25,29 +25,41 @@ const Main: React.FC = () => {
         <BriefContent />
 
         <div
-          id="cards_collection"
-          className="flex flex-col justify-start w-3/5"
-          style={{ height: "69%" }}
+          className="flex items-start justify-center"
+          style={{ width: "67vw", marginTop: "-7%" }}
         >
-          {/* <Card content={contentInputForTitle} isRequired={isNecessary} />
+          <div
+            id="cards_collection"
+            className="flex flex-col justify-evenly w-3/5"
+            style={{ height: "55%", width: "90%", marginTop: "6rem" }}
+          >
+            {/* <Card content={contentInputForTitle} isRequired={isNecessary} />
 
           <Card content="Writer" isRequired={true} />
 
           <Card content="Skateholder" isRequired={true} /> */}
-          <div className="flex flex-col h-1/2 justify-between">
-            <Card
-              contentTitle={contentInputForTitle}
-              contentTextInput=""
-              isRequired={isNecessary}
-            />
+            <div
+              className="flex flex-col h-1/2 justify-between"
+              style={{ height: "38rem" }}
+            >
+              <Card
+                contentTitle={contentInputForTitle}
+                contentTextInput=""
+                isRequired={isNecessary}
+              />
 
-            <Card contentTitle="Writer" contentTextInput="" isRequired={true} />
+              <Card
+                contentTitle="Writer"
+                contentTextInput=""
+                isRequired={true}
+              />
 
-            <Card
-              contentTitle="Sketch holder"
-              contentTextInput=""
-              isRequired={true}
-            />
+              <Card
+                contentTitle="Sketch holder"
+                contentTextInput=""
+                isRequired={true}
+              />
+            </div>
           </div>
         </div>
       </div>
